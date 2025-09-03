@@ -2,6 +2,9 @@ type GameBoardProps = {
   board: number[][];
 };
 
+export const BOARD_WIDTH = 10;
+export const BOARD_HEIGHT = 20;
+
 export default function GameBoard({ board }: GameBoardProps) {
   return (
     <div className="inline-grid bg-gray-800 p-2 rounded-lg"
