@@ -1,1 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
+@font-face {
+  font-family: "GoldmanBold";
+  src: url("./assets/fonts/Goldman-bold/Goldman-bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
 @import "tailwindcss";
+
+
+@theme{
+    --font-goldman: Goldman, "sans-serif";
+    --font-goldman-bold: GoldmanBold, "sans-serif";
+}

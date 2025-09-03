@@ -1,18 +1,16 @@
 import { useEffect, useState } from "react";
-import GameBoard from "./components/GameBoard";
 import { TETROMINOES } from "./game/tetrominoes";
+import "./style.css"
+import HomeScreen from "./components/homeScreen";
 
-const ROWS = 20;
-const COLS = 10;
+const HEIGHT = 20;
+const WIDTH = 10;
 
 function createEmptyBoard() {
-  return Array.from({ length: ROWS }, () => Array(COLS).fill(0));
+  return Array.from({ length: HEIGHT }, () => Array(WIDTH).fill(0));
 }
 export default function App() {
-
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-900">
-
-    </div>
+    <HomeScreen />  
   );
 }
